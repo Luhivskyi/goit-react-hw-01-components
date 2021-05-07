@@ -1,6 +1,7 @@
 .profile {
   color: #8c9aa8;
   text-align: center;
+  align-items: center;
   border: 1px solid rgb(232, 246, 242);
   border-radius: 2px;
   width: 390px;
