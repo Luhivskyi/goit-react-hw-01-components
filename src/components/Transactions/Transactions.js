@@ -1,6 +1,6 @@
 import React from 'react'
 
-import s from './Transactions.module.scss'
+import s from './Transactions.module.css'
 
 import PropTypes from 'prop-types'
 
@@ -29,8 +29,7 @@ if(items.length === 0) return null
 const Transactions = ({transactions}) => {
 
 
-    return (
-    <table className={s.transactionHistory}>
+    return (<table className={s.transactionHistory}>
   <thead className={s.thead}>
     <tr>
       <th >Type</th>
@@ -46,7 +45,7 @@ const Transactions = ({transactions}) => {
 )
 }
 
-Transactions.PropTypes = {
+Transactions.propTypes = {
   transactions: PropTypes.arrayOf(
     PropTypes.exact({
   

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import s from './StatsList.module.scss'
+import s from './StatsList.module.css'
 
 const Stats = ({followers, views, likes}) => {
     

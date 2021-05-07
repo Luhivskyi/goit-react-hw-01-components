@@ -1,13 +1,13 @@
 import React from 'react'
 
-import s from './FriendListItem.module.scss'
+import s from './FriendListItem.module.css'
 
 const FriendListItem = ({id, avatar, name, isOnline}) => {
 
-    const statusClassName = isOnline ? s.online : s.offline
+    
+    const statusClassName = isOnline ? s.online : s.offline;
 
     return (
-
         
   <li key={id} className={s.item}>
   <span className={statusClassName}></span>

@@ -1,14 +1,13 @@
 import React from 'react';
 import Stats from './Stats';
 
-import s from './Profile.module.scss'
+import s from './Profile.module.css'
 import PropTypes from 'prop-types'
 
 const Profile = ({name, tag, location, avatar, stats}) => {
 
 
-    return (
-        < div className={s.profile} >
+    return (< div className={s.profile} >
   <div class="description">
     <img src={avatar }
       alt="Аватар пользователя"
@@ -22,7 +21,7 @@ const Profile = ({name, tag, location, avatar, stats}) => {
     )
 }
 
-Profile.PropTypes = {
+Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,

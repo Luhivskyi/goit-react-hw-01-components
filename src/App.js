@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+
 import Profile from './components/Profile';
  import Statistics from './components/Statistics';
  import FriendsList from './components/FriendsList';
@@ -11,7 +12,7 @@ import userData from './data/user.json'
 
 
 
-const app = () => {
+const App = () => {
 
   return (
     <>
