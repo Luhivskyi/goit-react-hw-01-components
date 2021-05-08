@@ -5,7 +5,7 @@ import s from './FriendListItem.module.css'
 const FriendListItem = ({id, avatar, name, isOnline}) => {
 
     
-    const statusClassName = isOnline ? s.online : s.offline;
+    const statusClassName = [isOnline ? s.online : s.offline];
 
     return (
         

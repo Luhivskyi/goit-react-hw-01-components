@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import s from './Statistics.module.css'
 
@@ -27,4 +28,17 @@ const Statistics = ({items}) => {
 )
 }
 
-export default Statistics
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }),
+  ),
+
+}
+export default Statistics;
+
+

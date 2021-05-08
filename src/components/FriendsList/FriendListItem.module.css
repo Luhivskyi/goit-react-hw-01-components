@@ -1,6 +1,7 @@
 .item {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 200px;
   margin-bottom: 7px;
   border-radius: 1px;
@@ -15,6 +16,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  margin-right: 20px;
 
   background-color: green;
 }
@@ -22,5 +24,6 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  margin-right: 20px;
   background-color: red;
 }
