@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem'
 import s from './FriendList.module.css'
 
@@ -14,5 +14,13 @@ if (friends.length === 0) return null
     )     
 
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};
 
 export default FriendList

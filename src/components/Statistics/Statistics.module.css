@@ -1,11 +1,10 @@
 .statistics {
   text-align: center;
-  max-width: 70%;
 }
 .title {
   font-weight: 700;
   text-transform: uppercase;
-  color: gray;
+  color: grey;
 }
 .statList {
   padding: 0;
@@ -23,7 +22,6 @@
   line-height: 1.5;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: column;
   flex-direction: column;
   text-align: center;
 }

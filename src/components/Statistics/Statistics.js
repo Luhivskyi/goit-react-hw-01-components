@@ -1,35 +1,35 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
 import s from './Statistics.module.css'
 
-const statsListItem = ({id, label, percentage}) => {
+const StatsListItem = ({id, label, percentage}) => {
 
-return <li key={id} className={s.item}>
+return (<li key={id} className={s.item}>
       <span className={s.label}>{label}</span>
       <span className={s.percentage}>{percentage}</span>
-    </li>
+    </li>)
 }
 
 
 const StatsList = ({ items }) => {
     if(items.length === 0) return null
-    return <ul className={s.StatsList}>{items.map(statsListItem)}</ul>
+    return <ul className={s.statList}>{items.map(StatsListItem)}</ul>
 }
 
 
-const Statistics = ({items}) => {
+const Statistics = ({ items }) => {
 
-    return (<section className={s.statistics}>
-  <h2 className={s.title}>Upload stats</h2>
+  return (<section className={s.statistics}>
+    <h2 className={s.title}>Upload stats</h2>
 
-            <StatsList items={ items }/>
-</section>
-)
+    <StatsList items={items} />
+  </section>
+  );
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -37,8 +37,7 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     }),
   ),
-
-}
-export default Statistics;
+};
+  export default Statistics;
 
 
