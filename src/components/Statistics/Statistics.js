@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-
+import random from './random';
 import s from './Statistics.module.css'
 
 const StatsListItem = ({id, label, percentage}) => {
 
-return (<li key={id} className={s.item}>
+return (<li key={id} className={s.item} style={{ backgroundColor: random() }}>
       <span className={s.label}>{label}</span>
       <span className={s.percentage}>{percentage}</span>
     </li>)
@@ -39,5 +39,3 @@ Statistics.propTypes = {
   ),
 };
   export default Statistics;
-
-

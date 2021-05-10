@@ -21,7 +21,7 @@ const trClassName = i % 2 === 0 ? s.grey : s.white
 
 
 const TransactionBody = ({ items }) => {
-  if (items.length === 0) return null
+ 
   return <tbody className={s.tbody}>
     {items.map(TransactionTr)}</tbody>
 

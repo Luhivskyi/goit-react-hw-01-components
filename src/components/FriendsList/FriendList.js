@@ -9,7 +9,9 @@ const FriendList = ({friends}) => {
 if (friends.length === 0) return null
 
     return (<ul className={s.friendList}>
-        {friends.map(FriendListItem)}
+     
+      {friends.map(({ id, avatar, name, isOnline }) =>
+        <FriendListItem id={id} avatar={avatar} name={name} isOnline={isOnline} />)}
 </ul>
     )     
 
