@@ -10,10 +10,11 @@
   margin-bottom: 40px;
 }
 
-.stat-list {
+.statList {
   list-style-type: none;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .item {
