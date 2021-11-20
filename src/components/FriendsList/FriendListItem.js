@@ -9,7 +9,7 @@ const FriendListItem = ({id, avatar, name, isOnline}) => {
 
     return (
         
-  <li key={id} className={s.item}>
+  <li className={s.item}>
   <span className={statusClassName}></span>
   <img className={s.avatar} src={avatar} alt={name} width="48" />
             <p className={s.name}>{name}</p>
